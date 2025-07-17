@@ -142,7 +142,18 @@ main > section{
     margin-top: 0px;
     margin-bottom: 0px;
 }
+#experience-badge{
+  padding: 45px 42px; 
+  font-size: 1.5rem; 
+  font-weight: 500;
+  margin-left: -92px;
+  margin-top: -77px;
+}
 
+#experience-year{
+   font-size: 4rem;
+   font-weight: 700; 
+}
 
 /*  features will Enjoy */
 
@@ -194,7 +205,9 @@ main > section{
 .sponsor-companies img{
     filter: grayscale(100%);
 }
-
+.feature-architect img{
+    width: 100%;
+}
 
 
 
@@ -205,7 +218,9 @@ main > section{
 @media screen and (max-width: 576px) {
     .navbar, 
     .nav-link,
-    .teams{
+    .teams,
+    .feature
+    {
         flex-direction: column;
     }
     
@@ -229,12 +244,20 @@ main > section{
  .our-features{
     margin-left: 20px;
  }
+
+#experience-badge{
+   margin-top: 20px;
+   margin-left: 16px;
+
+}
+
+
 }
 
 /* medium size device */
 
 @media screen and (min-width: 576px) and (max-width: 992px){
-    .teams{
+    .teams, .feature{
         flex-direction: column;
     }
     
@@ -247,4 +270,10 @@ main > section{
         gap: 50px;
         justify-items: center;
     }
+
+    #experience-badge{
+   margin-top: 20px;
+   margin-left: 16px;
+
+}
 }
